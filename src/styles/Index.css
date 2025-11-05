@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.section {
+  max-width: 500px;
+  background-color: #242424;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  padding: 30px;
+  width: 100%;
+
+  gap: 10px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  margin-bottom: 16px;
+}

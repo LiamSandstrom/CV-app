@@ -1,12 +1,14 @@
-import './App.css'
+import Preview from "./components/preview";
+import Form from "./components/form";
+import "./styles/App.css";
 
 function App() {
-
   return (
     <>
-    <h1>Hello</h1>
+      <Form />
+      <Preview />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

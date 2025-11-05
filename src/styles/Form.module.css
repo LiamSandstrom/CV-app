@@ -1,0 +1,20 @@
+.wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+
+  color: rgba(255, 255, 255, 0.87);
+}
+
+@media (min-width: 700px) {
+  .wrapper {
+    overflow-y: auto;
+    max-height: 800px;
+  }
+}

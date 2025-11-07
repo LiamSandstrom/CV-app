@@ -1,6 +1,6 @@
 import styles from "../styles/Form.module.css";
-import About from "./About";
-import List from "./List";
+import About from "./About.jsx";
+import List from "./List.jsx";
 
 export default function Form({ data, setData }) {
   return (

@@ -1,4 +1,4 @@
-import Input from "./input";
+import Input from "./Input.jsx";
 export default function About({ data, setData }) {
   return (
     <div className="section">

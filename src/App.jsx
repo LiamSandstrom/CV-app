@@ -1,6 +1,6 @@
-import Preview from "./components/preview";
-import Form from "./components/form";
-import { data } from "./components/Data";
+import Preview from "./components/Preview.jsx";
+import Form from "./components/Form.jsx";
+import { data } from "./components/Data.js";
 import "./styles/App.css";
 import { useState } from "react";
 

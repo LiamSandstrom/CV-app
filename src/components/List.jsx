@@ -1,5 +1,5 @@
 import styles from "../styles/List.module.css";
-import Job from "./Job";
+import Job from "./Job.jsx";
 
 export default function List({ title, maxItems = 3, data, setData }) {
   function addItem() {

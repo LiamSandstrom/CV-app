@@ -1,0 +1,46 @@
+.wrapper {
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+
+h2 {
+  margin: 0;
+}
+
+button {
+  border: 1px solid rgba(120, 114, 114, 0.764);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+
+  padding: 20px;
+  border-radius: 10px;
+
+  width: 100%;
+}
+
+.entry{
+  width: 100%;
+  background-color: var(--bg);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.entry button{
+  margin-top: 10px;
+  background-color: rgb(216, 94, 94);
+  width: 100%;
+}

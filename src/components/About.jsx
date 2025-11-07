@@ -1,13 +1,11 @@
 import Input from "./input";
-
-export default function About() {
+export default function About({ data, setData }) {
   return (
     <div className="section">
       <h2>Personal details</h2>
-      <Input label="Name" />
-      <Input label="Email" type="email" />
-      <Input label="Phone number" type="tel" />
-      <Input label="Address" />
+      {Object.keys(data.personalDetails).map((item) => {
+        return <Input key={item} label={item} data={data} setData={setData} />;
+      })}
     </div>
   );
 }

@@ -2,12 +2,17 @@
 *::before,
 *::after {
   box-sizing: border-box;
+
+  --bg: #1a1a1a;
+  --bg-secondary: #242424;
+  --text-color: rgb(247, 247, 247);
 }
 
 .section {
   max-width: 500px;
-  background-color: #242424;
+  background-color: var(--bg-secondary);
   border-radius: 10px;
+  border: 1px solid #555353;
 
   display: flex;
   justify-content: center;
@@ -24,5 +29,6 @@ h1,
 h2,
 h3 {
   margin: 0;
-  margin-bottom: 16px;
 }
+
+

@@ -1,20 +1,26 @@
 import { useState } from "react";
 import styles from "../styles/Input.module.css";
 
-export default function Input({
+export default function Job({
   label = "(label)",
-  type = "text",
+  title,
+  index,
   placeholder = label,
   setData,
   data,
 }) {
   const [id] = useState(crypto.randomUUID());
+
   function inputSetData(e) {
+    const value = e.target.value;
+
     setData({
       ...data,
-      personalDetails: {
-        ...data.personalDetails,
-        [label]: e.target.value,
+      iterable: {
+        ...data.iterable,
+        [title]: data.iterable[title].map((item, i) =>
+          i === index ? { ...item, [label]: value } : item
+        ),
       },
     });
   }
@@ -23,10 +29,10 @@ export default function Input({
     <div className={styles.wrapper}>
       <label htmlFor={id}>{label}</label>
       <input
-        value={data.personalDetails[label] ?? ""}
+        value={data.iterable?.[title]?.[index]?.[label] ?? ""}
         onChange={inputSetData}
         id={id}
-        type={type}
+        type={label.includes("Year") ? "date" : "text"}
         placeholder={placeholder}
       />
     </div>
